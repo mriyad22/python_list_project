@@ -5,10 +5,10 @@ In left rotation, each element moves one position to the left, and the first ele
 
 #Using List Slicing
 
-# arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# d = 2
-# arr[:] = arr[d:] + arr[:d]
-# print(arr)
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+d = 2
+arr[:] = arr[d:] + arr[:d]
+print(arr)
 
 #-------------------------------------------------------------------------
 #Using reverse() Method
