@@ -39,12 +39,18 @@ This method creates a new list by rearranging slices so the last element moves t
 the first moves to the end.
 """
 
+# lst = [3, 8, 23, 2, 11, 90]
+# lst = lst[-1:] + lst[1:-1] + lst[:1]
+# print(lst)
+
+#-------------------------------------------------------------------
+#------> 5. Using a Temporary Variable
+"""
+This method performs a manual swap using a separate variable to hold the first element.
+"""
+
 lst = [3, 8, 23, 2, 11, 90]
-lst = lst[-1:] + lst[1:-1] + lst[:1]
+temp = lst[0]
+lst[0] = lst[-1]
+lst[-1] = temp
 print(lst)
-
-#-------------------------------------------------------------------
-
-
-
-#-------------------------------------------------------------------
