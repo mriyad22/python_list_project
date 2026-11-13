@@ -27,14 +27,21 @@ This method splits the list into the first element, the middle part, and the las
 then places them back in swapped order.
 """
 
-lst = [3, 8, 23, 2, 11, 90]
-a, *mid, b = lst
-lst = [b, *mid, a]
-print(lst)
+# lst = [3, 8, 23, 2, 11, 90]
+# a, *mid, b = lst
+# lst = [b, *mid, a]
+# print(lst)
 
 #-------------------------------------------------------------------
+#-----> 4. Using Slicing
+"""
+This method creates a new list by rearranging slices so the last element moves to the front and 
+the first moves to the end.
+"""
 
-
+lst = [3, 8, 23, 2, 11, 90]
+lst = lst[-1:] + lst[1:-1] + lst[:1]
+print(lst)
 
 #-------------------------------------------------------------------
 
